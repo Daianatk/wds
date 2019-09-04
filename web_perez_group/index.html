@@ -11,6 +11,12 @@
 <link href="plugins/flexslider/flexslider.css" rel="stylesheet" media="screen" />	
 <link href="css/cubeportfolio.min.css" rel="stylesheet" />
 <link href="css/style.css" rel="stylesheet" />
+<script>
+		$(document).ready(function()
+		{
+		   $("#mostrarmodal").modal("show");
+		});
+	  </script>
 <!-- Theme skin -->
 <link id="t-colors" href="skins/default.css" rel="stylesheet" />
 
@@ -24,14 +30,20 @@
 
 </head>
 <body>
-	<div id='ventana-flotante'>
-		<a class='cerrar' href='javascript:void(0);' onclick='document.getElementById(&apos;ventana-flotante&apos;).className = &apos;oculto&apos;'>x</a>
-		<div id='contenedor'>
-			<div class='contenido'>
-					<img src="img/banner1.jpg" alt="" />
-				</div>
+
+<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			</div>
+			<div class="modal-body">
+				<p><img src="img/banner1.jpg" class="img-responsive" alt="banner-aqp" /></p>  
 		</div>
+		</div>
+	</div>
+</div>
+
 <div id="wrapper">
 	<!-- start header -->
 	<header>
