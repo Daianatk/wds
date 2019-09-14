@@ -8,7 +8,7 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 
-$thank="gracias.html";
+$thank="enviado.html";
 
 $message = "
 nombre:".$nombre."
